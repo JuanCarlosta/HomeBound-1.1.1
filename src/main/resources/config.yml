@@ -1,0 +1,96 @@
+# # # # # # # # # # # # # # # # #
+#
+# Welcome to HoundHome config.yml.
+#
+# - You should join our discord server for
+# more information, support and updates. Our
+# discord server is the main way of reporting
+# bugs or ideas for possible improvements.
+#
+# - Discord: https://discord.gg/bMPDsyADup
+#
+# # # # # # # # # #
+notify-update:
+  enable: true
+#if it is true your plugin works otherwise not.
+enable: true
+#if its enabled, ppl get tp-item and massage below when they join to the server
+player-join: false
+massageJ:
+  - '&eWelcome &7%player_name% &eyou just got'
+  - '&etp item to use </s-home>'
+
+cooldown: true #if its true cooldown works
+player-join-cooldown: 24 #hours ppl get tp-item and massage when they join to the server each 24 hours
+
+#Massages#
+set-massage: '&aYou set your home location at &7'
+return-massage: '&aReturned to former location.'
+overriding-massage: 'Overriding current home at &7'
+reload-massage: '&aThe config.yml has been reloaded'
+teleporting-massage: '&aTeleporting to the %player_name% location &7'
+
+#Permission-massages#
+permission-massage: '&cYou do not have require permission to run this command'
+
+#Command-list-massage#
+massage:
+  - "&7-- &eWhole list of commands by shiheri &7--"
+  - "&e/s-home set &7- &eto set temporary home"
+  - "&e/s-home return &7- &eto return to your home"
+  - "&e/s-home &a<Name> &7- &eto teleport to target home"
+  - "&e/s-home reload &7- &eto reload &o&fconfig.yml"
+
+#Character limit for /rename. Default limit is 30 characters.
+rename_character_limit:
+  enabled: false
+  limit: 30
+
+#Economy usage#
+economy:
+  use: false
+  costs:
+    rename: 1000
+
+#Economy messages#
+economyM:
+  transaction_success: '&a{cost} has been spent successfully'
+  transaction_error: '&4Some a problems crept into taking money from your balance: {error}'
+
+#Checks whether underscores be replaced with spaces ot not#
+replace_underscores: false
+add_trailing_space_to_rename: false
+add_leading_space_to_rename: false
+
+#messages#
+rename:
+  success: '&eYou have successfully changed you item name'
+  log: '&aThe player &f{player} &ajust renamed an item to: &f"{name}&f"&a.'
+  incorect_item: '&cYou cant rename other materials'
+  no_arguments: '&c You have to enter /rename <new name>'
+  inccorect_world: '&cYou can not use it in this world'
+  name_too_long: '&c The name is too long'
+
+#CoolDowns#
+cooldown_g-home: 3 #hours Checks when player can enter this command /g-home to get tp item
+
+#Material  All Materials - https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html#
+TeleportItem:
+  item_name: 'Set Home Item'
+  material: ARROW
+  lore:
+   - '&9Important item you have to keep'
+   - '&9to use &e</s-home set>&7, &e/<s-home return>'
+  Enchantment:
+   infinity: 2
+
+#Per world plugin enable
+per_world: false
+
+#Enabled worlds
+enabled_worlds:
+  - 'world'
+  - 'world_nether'
+  - 'world_the_end'
+
+saved_location:
