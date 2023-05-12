@@ -33,6 +33,13 @@ teleporting-massage: '&aTeleporting to the %player_name% location &7'
 #Permission-massages#
 permission-massage: '&cYou do not have require permission to run this command'
 
+#Sends when player doesn't hold item while executing commands#
+massage-error-item:
+  - '&cYou have to keep item in you hand'
+  - '&cUse &7/g-home &cto get it'
+#Sens massage to admin is player doesn't have any set-location#
+massage-no-set: '&7%player_name% &cdoes not have a set-home'
+
 #Command-list-massage#
 massage:
   - "&7-- &eWhole list of commands by shiheri &7--"

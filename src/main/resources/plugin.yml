@@ -10,5 +10,5 @@ commands:
     description: To set you home location
   g-home:
     description: To give a home item
-  rename:
+  newname:
     description: To rename custom tp item
